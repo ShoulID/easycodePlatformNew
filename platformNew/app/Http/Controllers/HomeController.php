@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     /**
      * Create a new controller instance.
+     * Test changed
      *
      * @return void
      */
