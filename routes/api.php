@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // все защищенные роуты писать сюда
 // тест коммит
 Route::group(['middleware'=>'auth:sanctum'], function (){
-    //пример
+    //пример 1
     // писать как [class , 'method']
     Route::get('/user', function () {
         return 1121;
