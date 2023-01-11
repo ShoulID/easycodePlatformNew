@@ -17,3 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// все защищенные роуты писать сюда
+Route::group(['middleware'=>'auth:sanctum'], function (){
+    //пример
+    // писать как [class , 'method']
+    Route::get('/user', function () {
+        return 1121;
+    });
+});
