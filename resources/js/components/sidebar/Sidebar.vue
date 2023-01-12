@@ -1,5 +1,6 @@
 <template>
-    <div v-if="token" class="col-xl-3">
+    <!-- Left sidebar START -->
+    <div class="col-xl-3">
         <!-- Responsive offcanvas body START -->
         <div class="offcanvas-xl offcanvas-end" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
             <!-- Offcanvas header -->
@@ -22,13 +23,14 @@
                         <a class="list-group-item" href="instructor-edit-profile.html"><i class="bi bi-pencil-square fa-fw me-2"></i>Edit Profile</a>
                         <a class="list-group-item" href="instructor-setting.html"><i class="bi bi-gear fa-fw me-2"></i>Settings</a>
                         <a class="list-group-item" href="instructor-delete-account.html"><i class="bi bi-trash fa-fw me-2"></i>Delete Profile</a>
-                        <a @click.prevent = logout class="list-group-item text-danger bg-danger-soft-hover" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Sign Out</a>
+                        <a class="list-group-item text-danger bg-danger-soft-hover" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Sign Out</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Responsive offcanvas body END -->
     </div>
+    <!-- Left sidebar END -->
 </template>
 
 <script>

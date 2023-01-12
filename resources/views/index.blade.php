@@ -2,11 +2,8 @@
 @section('content')
     <template>
         <div class="flex-center position-ref full-height">
-            <div class="content">
-                <header-main></header-main>
-                <sidebar></sidebar>
-                <router-view></router-view>
-            </div>
+            <header-main></header-main>
+            <router-view></router-view>
         </div>
     </template>
 @endsection

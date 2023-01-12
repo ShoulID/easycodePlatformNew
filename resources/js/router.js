@@ -6,6 +6,8 @@ Vue.use(vueRouter);
 import Index from "./views/index";
 import Profile from "./views/profile/Profile";
 import Login from "./views/auth/Login";
+import Courses from "./views/courses/Courses";
+import Homeworks from "./views/homeworks/Homeworks";
 
 const routes = [
     {
@@ -19,6 +21,14 @@ const routes = [
     {
         path: '/login',
         component: Login
+    },
+    {
+        path: '/courses',
+        component: Courses
+    },
+    {
+        path: '/homeworks',
+        component: Homeworks
     }
 ];
 
